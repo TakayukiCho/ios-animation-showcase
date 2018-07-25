@@ -8,18 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class IndexViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidLayoutSubviews() {
+        let indexView = IndexView(frame: view.bounds)
+        view.addSubview(indexView)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
 
